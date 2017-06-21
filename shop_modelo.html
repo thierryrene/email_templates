@@ -1,0 +1,937 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+        table {border-collapse: collapse;}
+    </style>
+    <![endif]-->
+</head>
+
+<style type="text/css">
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    Margin: 0;
+    padding: 0;
+    min-width: 100%;
+    background-color: #ffffff;
+}
+table {
+    border-spacing: 0;
+    font-family: sans-serif;
+    color: #333333;
+}
+td {
+    padding: 0;
+}
+img {
+    border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+    Margin: 0;
+  letter-spacing: 0.5px;
+}
+
+h1, h2 {
+  font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+  letter-spacing: 1px;
+  margin: 15px 0px;
+}
+
+hr {
+  border: 1px solid #ff327c;
+}
+
+.preheader {
+    display: none !important;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.first-line, .last-line {
+  font-size: 10px;
+  font-weight: none;
+}
+
+.logo {
+}
+
+.menu {
+  background-color: #fff;
+}
+
+.social {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.wrapper {
+    width: 100%;
+    table-layout: fixed;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+.webkit {
+    max-width: 600px;
+}
+.outer {
+    Margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+.inner {
+    padding: 20px;
+}
+.menu-inner {
+    padding-top: 10px;
+  padding-bottom: 10px;
+}
+.contents {
+    width: 100%;
+}
+
+.h1 {
+    font-size: 21px;
+    font-weight: bold;
+    Margin-bottom: 18px;
+}
+.h2 {
+    font-size: 18px;
+    font-weight: bold;
+    Margin-bottom: 12px;
+}
+.full-width-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* One column layout */
+.one-column .contents {
+    text-align: left;
+}
+.one-column p {
+    font-size: 14px;
+    Margin-bottom: 10px;
+}
+
+/*Two column layout*/
+.two-column {
+    text-align: center;
+    font-size: 0;
+}
+.two-column .column {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+.two-column .contents {
+    font-size: 14px;
+    text-align: left;
+}
+.two-column img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+.two-column .text {
+    padding-top: 10px;
+}
+
+/*Three column layout*/
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.three-column .column {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+}
+.three-column .contents {
+    font-size: 14px;
+    text-align: center;
+}
+.three-column .text {
+    padding-top: 10px;
+}
+
+/*Three column layout*/
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.three-column .column {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .contents {
+    font-size: 14px;
+    text-align: center;
+}
+.three-column img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+}
+.three-column .text {
+    padding-top: 10px;
+}
+
+/*Three column layout 2*/
+.six-column {
+    text-align: center;
+    font-size: 0;
+    /*padding-top: 10px;
+    padding-bottom: 10px;*/
+}
+
+.six-column .column {
+    width: 100%;
+    max-width: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+.six-column .contents {
+    font-size: 12px;
+    text-align: center;
+}
+.six-column img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+}
+.six-column .text {
+    padding-top: 10px;
+    text-align: center;
+}
+.six-column a {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Left sidebar layout */
+.left-sidebar {
+    text-align: center;
+    font-size: 0;
+}
+.left-sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.left-sidebar .left {
+    max-width: 300px;
+}
+.left-sidebar .right {
+    max-width: 300px;
+}
+.left-sidebar .img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+.left-sidebar .contents {
+    font-size: 14px;
+    text-align: left;
+}
+.left-sidebar a {
+    color: #000;
+  text-transform: uppercase;
+  border-bottom: solid 1px #000;
+}
+
+/* Right sidebar layout */
+.right-sidebar {
+    text-align: center;
+    font-size: 0;
+}
+.right-sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.right-sidebar .left {
+    max-width: 300px;
+}
+.right-sidebar .right {
+    max-width: 300px;
+}
+.right-sidebar .img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+.right-sidebar .contents {
+    font-size: 14px;
+    text-align: right;
+}
+.right-sidebar a {
+  color: #000;
+  text-transform: uppercase;
+  border-bottom: solid 1px #000;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 600px) {
+  .right-sidebar .contents {
+    text-align: center;
+  }
+  .left-sidebar .contents {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  hr {
+    border: 1px solid #000;
+    max-width: 95%;
+  }
+    .two-column .column,
+    .three-column .column {
+        max-width: 100% !important;
+    }
+    .two-column img {
+        max-width: 100% !important;
+    }
+    .three-column img {
+        max-width: 50% !important;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 620px) {
+    .three-column .column {
+        max-width: 33% !important;
+    }
+    .two-column .column {
+        max-width: 50% !important;
+    }
+}
+
+</style>
+
+<body>
+
+<span class="preheader">chamada abaixo do sub-titulo.</span>
+
+    <center class="wrapper">
+
+        <div class="webkit">
+            <!--[if (gte mso 9)|(IE)]>
+              <table width="600" align="center">
+                <tr>
+              <td>
+            <![endif]-->
+            <table class="outer" align="center">
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- primeira fa -->
+                <!-- to do: colocar link do logo -->
+                <tr>
+                    <td>
+                        <p class="first-line text-center"><a href="http://static.static.stealthelook.com.br/">ver no navegador</a> | <a href="">desinscrever</a></p>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                
+                <tr class="logo">
+                    <td class="full-width-image">
+                        <img src="http://static.stealthelook.com.br/news/new_stl_news/shop_news/shop_logo.jpg" width="600" alt="" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <hr>
+                    </td>
+                </tr>
+
+                <!-- menu -->
+                <tr class="menu">
+                    <td class="six-column">
+                        <!--[if (gte mso 9)|(IE)]>
+                          <table width="100%">
+                          <tr>
+                          <td width="200" valign="top">
+                          <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="menu-inner contents">
+                                        <a href="">new in</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                          </td><td width="200" valign="top">
+                          <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="menu-inner contents">
+                                        <a href="">roupas</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                          </td><td width="200" valign="top">
+                          <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="menu-inner contents">
+                                        <a href="">sapatos</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                          </tr>
+                          <tr>
+                          <td width="200" valign="top">
+                          <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="menu-inner contents">
+                                        <a href="">acessórios</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+          </td><td width="200" valign="top">
+          <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="menu-inner contents">
+                                        <a href="">beleza</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+          </td><td width="200" valign="top">
+          <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="menu-inner contents">
+                                        <a href="#">vintage</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="full-width-image">
+                        <img src="http://static.stealthelook.com.br/news/new_stl_news/shop_news/shop_logo.jpg" width="600" alt="" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="one-column">
+                        <table width="100%">
+                            <tr>
+                                <td class="contents">
+
+                                  <br>
+                                  
+                                    <h2 class="text-center">MESSY HAIR SEM BABYLISS</h2>
+                                    <p class="text-center">Sim, a missão é possível e você não vai danificar os fios!
+
+                                        <br>
+                                        <br>
+                                        <br>
+
+                                        <img src="http://static.stealthelook.com.br/news/new_stl_news/acesse.jpg" alt=""></p>
+
+                                        <br>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- sidebar  1 -->
+                <tr style="">
+                    <td class="left-sidebar" dir="ltr">
+                        <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%" dir="ltr">
+                  <tr>
+                  <td width="100">
+                  <![endif]-->
+                        <div class="column left" dir="rtl">
+                            <table width="100%">
+                                <tr>
+                                    <td>
+                                        <img src="http://static.stealthelook.com.br/news/new_stl_news/2017/06/20/2.jpg" class="img" alt="" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="500">
+                        <![endif]-->
+                        <div class="column right" dir="rtl">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner contents text-left">
+                                        <h2>WISH LIST DA SEMANA</h2>
+                                        <p>Compartilhamos com vocês nossos itens desejo dessa semana</p>
+                                        <br>
+                                        <p><a href="">ver post</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- sidebar 2 -->
+                <tr>
+                    <td class="right-sidebar" dir="rtl">
+                        <!--[if (gte mso 9)|(IE)]>
+                <table width="100%" dir="rtl">
+                <tr>
+                <td width="100">
+                <![endif]-->
+                        <div class="column left" dir="ltr">
+                            <table width="100%">
+                                <tr>
+                                    <td>
+                                        <img src="http://static.stealthelook.com.br/news/new_stl_news/2017/06/20/4.jpg" class="img" alt="" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                </td><td width="500">
+                <![endif]-->
+                        <div class="column right" dir="ltr">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner contents">
+                                        <h2>7 RAZÕES PARA VOCÊ INVESTIR EM UMA CALÇA FLARE</h2>
+                                        <p>A calça que combina com todo tipo de look</p>
+                                        <br>
+                                        <p><a href="">ver post</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- sidebar  1 -->
+                <tr style="">
+                    <td class="left-sidebar" dir="ltr">
+                        <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%" dir="ltr">
+                  <tr>
+                  <td width="100">
+                  <![endif]-->
+                        <div class="column left" dir="rtl">
+                            <table width="100%">
+                                <tr>
+                                    <td>
+                                        <img src="http://static.stealthelook.com.br/news/new_stl_news/2017/06/20/3.jpg" class="img" alt="" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="500">
+                        <![endif]-->
+                        <div class="column right" dir="rtl">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner contents">
+                                        <h2>8 MANEIRAS DE USAR T-SHIRT VINTAGE</h2>
+                                        <p>A peça básica e cool que merece estar no seu guarda-roupa</p>
+                                        <br>
+                                        <p><a href="">ver post</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- sidebar 2 -->
+                <tr>
+                    <td class="right-sidebar" dir="rtl">
+                        <!--[if (gte mso 9)|(IE)]>
+                <table width="100%" dir="rtl">
+                <tr>
+                <td width="100">
+                <![endif]-->
+                        <div class="column left" dir="ltr">
+                            <table width="100%">
+                                <tr>
+                                    <td>
+                                        <img src="http://static.stealthelook.com.br/news/new_stl_news/2017/06/20/5.jpg" class="img" alt="" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                </td><td width="500">
+                <![endif]-->
+                        <div class="column right" dir="ltr">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner contents">
+                                        <h2>8 DICAS PARA GARANTIR O PLATINADO PERFEITO</h2>
+                                        <p>O cronograma capilar nunca foi tão importante</p>
+                                        <br>
+                                        <p><a href="">ver post</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="three-column">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%">
+                        <tr>
+                        <td width="200" valign="top">
+                        <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="">
+                                        <table class="contents">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://media.giphy.com/media/3ohzdPmHlaJlVPNxxS/source.gif" width="180" alt="" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text">
+                                                    Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="200" valign="top">
+                        <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="">
+                                        <table class="contents">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://media.giphy.com/media/3ohzdPmHlaJlVPNxxS/source.gif" width="180" alt="" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text">
+                                                    Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="200" valign="top">
+                        <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="">
+                                        <table class="contents">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://media.giphy.com/media/3ohzdPmHlaJlVPNxxS/source.gif" width="180" alt="" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text">
+                                                    Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+
+                <tr>
+                  <td><br></td>
+                </tr>
+
+                <tr>
+                    <td class="two-column">
+                        <!--[if (gte mso 9)|(IE)]>
+                    <table width="100%">
+                    <tr>
+                    <td width="50%" valign="top">
+                    <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://media.giphy.com/media/xUPGcAep2BZhomS0HC/source.gif" width="280" alt="" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text">
+                                                    Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                    </td><td width="50%" valign="top">
+                    <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://media.giphy.com/media/xUPGcAep2BZhomS0HC/source.gif" width="280" alt="" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text">
+                                                    Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                        <!--[if (gte mso 9)|(IE)]>
+                          </td><td width="50%" valign="top">
+                          <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://media.giphy.com/media/xUPGcAep2BZhomS0HC/source.gif" width="280" alt="" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text">
+                                                    Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                          </tr>
+                          </table>
+                          <![endif]-->
+                        <!--[if (gte mso 9)|(IE)]>
+                                </td><td width="50%" valign="top">
+                                <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://media.giphy.com/media/xUPGcAep2BZhomS0HC/source.gif" width="280" alt="" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><br /></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text">
+                                                    Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><br /></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </div>
+    </center>
+
+</body>
+
+</html>

@@ -1,0 +1,793 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+        table {border-collapse: collapse;}
+    </style>
+    <![endif]-->
+</head>
+
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800');
+    body {
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        background-color: #ffffff;
+    }
+    
+    table {
+        border-spacing: 0;
+        font-family: sans-serif;
+        color: #000;
+    }
+    
+    td {
+        padding: 0;
+    }
+    
+    img {
+        border: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    p {
+        margin: 0;
+        letter-spacing: 0.5px;
+    }
+    
+    h1,
+    h2 {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        letter-spacing: 1px;
+        margin: 15px 0px;
+    }
+    
+    hr {
+        border: 1px solid #000;
+    }
+    
+    .canspamBar,
+    #canspamBarWrapper {
+        display: none;
+    }
+    
+    .preheader {
+        display: none !important;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .text-left {
+        text-align: left;
+    }
+    
+    .first-line a {
+        border-bottom: 1px solid #000;
+        padding-bottom: 1px;
+    }
+    
+    .first-line,
+    .last-line {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0px;
+        font-weight: none;
+        color: #000;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+    
+    .social {
+        font-size: 28px;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+    }
+    
+    .menu {
+        background-color: #fff;
+        font-size: 0px;
+    }
+    
+    .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+    
+    .webkit {
+        max-width: 680px;
+    }
+    
+    .outer {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .inner {
+        padding: 20px;
+    }
+    
+    .menu-inner {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .contents {
+        width: 100%;
+    }
+    
+    .h1 {
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+    
+    .h2 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+    
+    .full-width-image img {
+        width: 100%;
+        /*max-width: 600px;*/
+        height: auto;
+    }
+    /* One column layout */
+    
+    .one-column .contents {
+        text-align: left;
+    }
+    
+    .one-column p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    /*Two column layout*/
+    
+    .two-column {
+        text-align: center;
+        font-size: 0;
+    }
+    
+    .two-column .column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .two-column .contents {
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    .two-column img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+    
+    .two-column .text {
+        padding-top: 10px;
+    }
+    /*Three column layout*/
+    
+    .three-column {
+        text-align: center;
+        font-size: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .three-column .column {
+        width: 100%;
+        max-width: 200px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .three-column img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+    }
+    
+    .three-column .contents {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .three-column .text {
+        padding-top: 10px;
+    }
+    /* four column layout */
+    
+    .four-column {
+        text-align: center;
+        font-size: 0;
+    }
+    
+    .four-column .column {
+        width: 100%;
+        max-width: 65px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .four-column .contents {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .four-column img {
+        /*width: 100%;*/
+        /*max-width: 180px;*/
+        height: auto;
+    }
+    
+    .four-column .text {
+        padding-top: 10px;
+    }
+    /* Six column layout */
+    
+    .six-column {
+        text-align: center;
+        font-size: 0;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        border-bottom: 1px solid #000;
+        padding-bottom: 18px;
+    }
+    
+    .six-column .column {
+        width: 100%;
+        max-width: 100px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .six-column .contents {
+        font-size: 16px;
+        text-align: center;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+    
+    .six-column img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+    }
+    
+    .six-column .text {
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    .six-column a {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    /* Left sidebar layout */
+    
+    .left-sidebar {
+        text-align: center;
+        font-size: 0;
+    }
+    
+    .left-sidebar .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .left-sidebar .left {
+        max-width: 300px;
+    }
+    
+    .left-sidebar .right {
+        max-width: 300px;
+    }
+    
+    .left-sidebar .img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    
+    .left-sidebar .contents {
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    .left-sidebar a {
+        color: #000;
+        text-transform: uppercase;
+        border-bottom: solid 1px #000;
+    }
+    /* Right sidebar layout */
+    
+    .right-sidebar {
+        text-align: center;
+        font-size: 0;
+    }
+    
+    .right-sidebar .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .right-sidebar .left {
+        max-width: 300px;
+    }
+    
+    .right-sidebar .right {
+        max-width: 300px;
+    }
+    
+    .right-sidebar .img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    
+    .right-sidebar .contents {
+        font-size: 14px;
+        text-align: right;
+    }
+    
+    .right-sidebar a {
+        color: #000;
+        text-transform: uppercase;
+        border-bottom: solid 1px #000;
+    }
+    /*Media Queries*/
+    
+    @media screen and (max-width: 600px) {
+        .right-sidebar .contents {
+            text-align: center;
+        }
+        .left-sidebar .contents {
+            text-align: center;
+        }
+        .outer {
+            margin: 0 auto;
+            width: 95%;
+        }
+        .first-line,
+        .last-line {
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: 0px;
+            font-weight: none;
+            color: #000;
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        }
+        .social {
+            font-size: 25px;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        hr {
+            border: 1px solid #000;
+            max-width: 95%;
+        }
+        .six-column .contents {
+            font-size: 12px;
+            text-align: center;
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        }
+        .two-column .column,
+        .three-column .column {
+            max-width: 100% !important;
+        }
+        .two-column img {
+            max-width: 100% !important;
+        }
+        .three-column img {
+            max-width: 50% !important;
+        }
+    }
+    
+    @media screen and (min-width: 401px) and (max-width: 620px) {
+        .three-column .column {
+            max-width: 33% !important;
+        }
+        .two-column .column {
+            max-width: 50% !important;
+        }
+    }
+</style>
+
+<body>
+
+<table style="width: 600px;">
+    
+    <tr>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+
+    <tr colspan="4" style="background-color: gold;">
+        <td>1</td>
+    </tr>
+
+</table>
+
+    <span class="preheader">chamada abaixo do sub-titulo.</span>
+
+    <center class="wrapper">        
+
+        <div class="webkit">
+            <!--[if (gte mso 9)|(IE)]>
+              <table width="600" align="center">
+                <tr>
+              <td>
+            <![endif]-->
+            <table class="outer" align="center">
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- primeira linha | desinscrever / ver no navegador -->
+                <tr>
+                    <td>
+                        <p class="first-line text-center"><a target="_blank" href="#">ver no navegador</a> | <a target="_blank" href="#">desinscrever</a></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr class="logo">
+                    <td class="full-width-image text-center">
+                        <img src="http://static.stealthelook.com.br/news/new_stl_news/shop_news/shop_logo.jpg" alt="" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- menu -->
+                <tr class="menu">
+                    <td class="six-column">
+                        <!--[if (gte mso 9)|(IE)]>
+                          <table width="100%">
+                          <tr>
+                          <td width="200" valign="top">
+                          <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="menu-inner contents">
+                                        <a target="_blank" href="">new in</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                          </td><td width="200" valign="top">
+                          <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="menu-inner contents">
+                                        <a target="_blank" href="">roupas</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                          </td><td width="200" valign="top">
+                          <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="menu-inner contents">
+                                        <a target="_blank" href="">sapatos</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                          </tr>
+                          <tr>
+                          <td width="200" valign="top">
+                          <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="menu-inner contents">
+                                        <a target="_blank" href="">acessórios</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="200" valign="top">
+                        <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="menu-inner contents">
+                                        <a target="_blank" href="">beleza</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="200" valign="top">
+                        <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="menu-inner contents">
+                                        <a target="_blank" href="#">vintage</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+
+                <!-- SPACE -->
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- IMAGE -->
+                <tr>
+                    <td class="full-width-image">
+                        <img src="http://stealthelook.com.br/news/new_stl_news/shop_news/2017/06/21/1.gif" alt="" />
+                    </td>
+                </tr>
+
+                <!-- SPACE -->
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- IMAGE -->
+                <tr>
+                    <td class="full-width-image inner contents">
+                        <img src="http://stealthelook.com.br/news/new_stl_news/shop_news/2017/06/21/2.jpg" alt="" />
+                    </td>
+                </tr>
+
+                <!-- SPACE -->
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- IMAGE -->
+                <tr>                    
+                    <table style="width:600px">
+
+                        <tr>
+                            <td rowspan="4" style="background-color: gold;"><img src="http://stealthelook.com.br/news/new_stl_news/shop_news/2017/06/21/imagens/2_01.jpg"></td>
+                        </tr>
+
+                        <tr>
+                            <td style="background-color: crimson;">
+                                <a target="_blank" href="#"><img src="http://stealthelook.com.br/news/new_stl_news/shop_news/2017/06/21/imagens/2_02.jpg"></a>
+                                <p class="text-center">Lorem ipsum dolor</p>
+                            </td>
+                            <td style="background-color: green;">
+                                <a target="_blank" href="#"><img src="http://stealthelook.com.br/news/new_stl_news/shop_news/2017/06/21/imagens/2_03.jpg"></a>
+                                <p class="text-center">Lorem ipsum dolor</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="background-color: cornflowerblue;">
+                                <a target="_blank" href="#"><img src="http://stealthelook.com.br/news/new_stl_news/shop_news/2017/06/21/imagens/2_04.jpg"></a>
+                                <p class="text-center">Lorem ipsum dolor</p>
+                            </td>
+                            <td style="background-color: brown;">
+                                <a target="_blank" href="#"><img src="http://stealthelook.com.br/news/new_stl_news/shop_news/2017/06/21/imagens/2_05.jpg"></a>
+                                <p class="text-center">Lorem ipsum dolor</p>
+                            </td>
+                        </tr>
+
+                    </table>
+                </tr>
+
+                <!-- SPACE -->
+                <tr>
+                    <td>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- SOCIAL -->
+                <tr>
+                    <table class="social">                    
+                        <td>
+                            <p class="text-center">stay <span style="font-weight: 700;">connected</span></p>
+                        </td>
+                    </table>
+                </tr>
+
+                <!-- SPACE -->
+                <tr>
+                    <td>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- SOCIAL LINKS -->
+                <tr>
+                    <table>
+                        <td>
+                            <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%">
+                              <tr>
+                              <td width="200" valign="top">
+                              <![endif]-->
+                            <div class="column">
+                                <table width="100%">
+                                    <tr>
+                                        <td class="contents">
+                                            <a target="_blank" href=""><img src="http://static.stealthelook.com.br/news/new_stl_news/facebook_logo.png"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if (gte mso 9)|(IE)]>
+                              </td><td width="200" valign="top">
+                              <![endif]-->
+
+                            <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%">
+                              <tr>
+                              <td width="200" valign="top">
+                              <![endif]-->
+                            <div class="column">
+                                <table width="100%">
+                                    <tr>
+                                        <td class="contents">
+                                            <a target="_blank" href=""><img src="http://static.stealthelook.com.br/news/new_stl_news/pinterest_logo.png"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if (gte mso 9)|(IE)]>
+                              </td><td width="200" valign="top">
+                              <![endif]-->
+
+                            <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%">
+                              <tr>
+                              <td width="200" valign="top">
+                              <![endif]-->
+                            <div class="column">
+                                <table width="100%">
+                                    <tr>
+                                        <td class="contents">
+                                            <a target="_blank" href=""><img src="http://static.stealthelook.com.br/news/new_stl_news/instagram_logo.png"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if (gte mso 9)|(IE)]>
+                              </td><td width="200" valign="top">
+                              <![endif]-->
+
+                            <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%">
+                              <tr>
+                              <td width="200" valign="top">
+                              <![endif]-->
+                            <div class="column">
+                                <table width="100%">
+                                    <tr>
+                                        <td class="contents">
+                                            <a target="_blank" href=""><img src="http://static.stealthelook.com.br/news/new_stl_news/youtube_logo.png"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if (gte mso 9)|(IE)]>
+                            </td><td width="200" valign="top">
+                            <![endif]-->
+                        </td>
+                    </table>
+                </tr>
+
+                <!-- SPACE -->
+                <tr>
+                    <td>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+
+                <!-- HR LINE -->
+                <tr>
+                    <td style="border-bottom: 1px solid #000;"></td>
+                </tr>
+
+                <!-- SPACE -->
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p class="last-line text-center">Os produtos apresentado estão sujeitos a variação de preços, conforme determinação dos respectivos e-commerces. Qualquer dúvida, favor entrar em contato através do email <b>contato@stealthelook.com.br</b></p>
+                    </td>
+                </tr>
+
+                <!-- SPACE -->
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </div>
+    </center>
+
+</body>
+
+</html>
