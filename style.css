@@ -27,11 +27,13 @@ a {
 
 p {
 	Margin: 0;
+  letter-spacing: 0.5px;
 }
 
-h2 {
+h1, h2 {
   font-family: 'Open Sans',Helvetica,Arial,sans-serif;
   letter-spacing: 1px;
+  margin: 15px 0px;
 }
 
 hr {
@@ -74,6 +76,10 @@ hr {
 }
 .inner {
 	padding: 20px;
+}
+.menu-inner {
+	padding-top: 10px;
+  padding-bottom: 10px;
 }
 .contents {
 	width: 100%;
@@ -184,8 +190,8 @@ hr {
 .six-column {
     text-align: center;
     font-size: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /*padding-top: 10px;
+    padding-bottom: 10px;*/
 }
 
 .six-column .column {
@@ -276,7 +282,7 @@ hr {
 }
 
 /*Media Queries*/
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .right-sidebar .contents {
   	text-align: center;
   }
